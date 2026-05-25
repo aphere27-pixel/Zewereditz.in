@@ -1,0 +1,60 @@
+:root {
+    --bg-dark: #121212;
+    --bg-card: #1e1e1e;
+    --primary-red: #e50914;
+    --hover-red: #b80710;
+    --text-main: #ffffff;
+    --text-muted: #aaaaaa;
+    --border-color: #333333;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
+body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; }
+.container { width: 90%; max-width: 1100px; margin: 0 auto; padding: 0 15px; }
+header { background-color: rgba(18, 18, 18, 0.95); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 100; padding: 15px 0; }
+.nav-container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 24px; font-weight: 800; color: var(--primary-red); letter-spacing: 1px; }
+.btn { display: inline-block; background-color: var(--primary-red); color: #fff; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; text-align: center; border: none; }
+.btn:hover { background-color: var(--hover-red); transform: translateY(-2px); }
+.btn-sm { padding: 8px 20px; font-size: 14px; }
+.btn-lg { width: 100%; font-size: 18px; padding: 15px; }
+.hero { padding: 80px 0 60px 0; text-align: center; background: radial-gradient(circle at top, #2a0507 0%, var(--bg-dark) 70%); }
+.badge { background-color: rgba(229, 9, 20, 0.2); color: var(--primary-red); padding: 5px 15px; border-radius: 20px; font-size: 14px; font-weight: 600; border: 1px solid var(--primary-red); display: inline-block; margin-bottom: 20px; }
+h1 { font-size: 42px; font-weight: 800; line-height: 1.2; margin-bottom: 20px; }
+.subheadline { color: var(--text-muted); font-size: 18px; max-width: 800px; margin: 0 auto 40px auto; }
+.price-box { background-color: var(--bg-card); border: 1px solid var(--border-color); max-width: 500px; margin: 0 auto; padding: 30px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+.price-flex { display: flex; justify-content: center; align-items: baseline; gap: 15px; margin-bottom: 10px; }
+.current-price { font-size: 48px; font-weight: 800; color: #fff; }
+.old-price { font-size: 24px; color: var(--text-muted); text-decoration: line-through; }
+.offer-text { color: #ffcc00; font-size: 14px; margin-bottom: 20px; }
+.course-details { padding: 60px 0; background-color: #161616; }
+h2 { font-size: 32px; text-align: center; margin-bottom: 10px; }
+.section-sub { text-align: center; color: var(--text-muted); margin-bottom: 40px; }
+.grid-modules { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.card { background-color: var(--bg-card); border: 1px solid var(--border-color); padding: 25px; border-radius: 8px; transition: transform 0.3s; }
+.card:hover { transform: translateY(-5px); border-color: var(--primary-red); }
+.card-icon { font-size: 30px; color: var(--primary-red); margin-bottom: 15px; }
+.card h3 { margin-bottom: 10px; font-size: 20px; }
+.card p { color: var(--text-muted); }
+.testimonials { padding: 60px 0; }
+.testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 30px; }
+.test-card { background-color: var(--bg-card); padding: 30px; border-radius: 8px; border-left: 4px solid var(--primary-red); }
+.stars { color: #ffcc00; margin-bottom: 15px; }
+.test-card p { font-style: italic; color: #e0e0e0; margin-bottom: 15px; }
+.test-card h4 { color: var(--primary-red); }
+.payment-section { padding: 60px 0; background-color: #161616; text-align: center; }
+.checkout-box { background-color: var(--bg-dark); border: 2px solid var(--primary-red); max-width: 550px; margin: 30px auto 0 auto; padding: 40px 30px; border-radius: 10px; }
+.checkout-header { margin-bottom: 20px; }
+.strike { text-decoration: line-through; color: var(--text-muted); font-size: 18px; }
+.pay-instruction { margin-bottom: 25px; color: var(--text-muted); }
+.payment-buttons { display: flex; flex-direction: column; gap: 15px; }
+.pay-btn { display: block; padding: 15px; border-radius: 5px; text-decoration: none; font-weight: 700; font-size: 16px; color: #fff; transition: background 0.3s; }
+.upi-card { background-color: #0984e3; }
+.upi-card:hover { background-color: #076bba; }
+.paypal { background-color: #003087; }
+.paypal:hover { background-color: #001c54; }
+.secure-badges { margin-top: 25px; font-size: 13px; color: var(--text-muted); }
+footer { padding: 40px 0; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-muted); font-size: 14px; }
+.support { margin-top: 10px; color: #fff; }
+@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
+.animate-btn { animation: pulse 2s infinite; }
+@media(max-width: 768px) { h1 { font-size: 32px; } .subheadline { font-size: 16px; } }
